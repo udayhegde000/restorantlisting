@@ -1,0 +1,25 @@
+## Web Server Properties ##
+server:
+  port: 9096
+  servlet:
+    context-path: /restaurant
+
+## Spring Boot Properties ##
+spring:
+  application:
+    name: RESTAURANT-MICROSERVICE
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://mysql-db.c7gsqwiaeen8.eu-west-2.rds.amazonaws.com:3306/restaurantdb
+    username: admin
+    password: ltfFgeX8MaslG5WY56oe
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+## Eureka Discovery Client Properties ##
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
